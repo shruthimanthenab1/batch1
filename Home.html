@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+    <style>
+            .fa{
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    
+         <nav class="navbar navbar-expand-md bg-dark">
+           <a class="navbar-brand"  href="">
+             <img src="logo.jpg"alt="logo"width="60px"height="60px"class="rounded">
+           </a>
+           <button class="navbar-toggler bg-white ml-auto">
+            <span class="navbar-toggler-icon" data-target="#hum" data-toggle="collapse"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="hum">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item  ml-auto">
+                  <a class="nav-link text-white"  href="">Home</a>
+                </li>
+                <li class="navbar-nav ml-auto">
+                 <a class="nav-link text-white" href="">Aboutus</a>
+                </li>
+                <li class="navbar-nav ml-auto">
+                 <a class="nav-link text-white" href="">Menu</a>
+                </li>
+                <li class="navbar-nav ml-auto">
+                 <a class="nav-link text-white"href="">Gallery</a>
+                </li>
+                <li class="navbar-nav ml-auto">
+                <a class="nav-link text-white" href="">Contact</a>
+                </li>
+              </ul> 
+            </div>
+          </nav>
+              <!---nav end-->
+              <div  id="n" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#n" data-slide-to="0"></li>
+                  <li data-target="#n" data-slide-to="1"></li>
+                </ol>
+                <div class ="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="jumbotron-fluid">
+                      <img src="img.jpeg" alt="" class="d-block w-100">
+                      <div class="carousel-caption text-white w-100 ">
+                        <h2>Foods the most precious thing</h2>
+                        <h5>Happy food.Happy faces</h5>
+                        <button  class="btn btn-outline-success" data-target="#booktable" data-toggle="modal">
+                         Book a table
+                         </button>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="jumbotron-fluid">
+                      <img src="p2.jpeg" alt="" class="d-block w-100">
+                      <div class="carousel-caption text-white w-100 ">
+                        <h2>Foods the most precious thing</h2>
+                        <h5>Happy food.Happy faces</h5>
+                        <button  class="btn btn-outline-success" data-target="#booktable" data-toggle="modal">
+                         Book a table
+                        </button>
+                     </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div> 
+              <!-------carousel end-->
+
+
+              <div class="modal" id="booktable">
+                <div class="modal-dailog">
+                  <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="text-center"><b>Booking table</b></h1>
+                  <button class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                <form action="">
+                  <div class="row">
+                    <div class="col">
+                  <div class="form-group">
+                    <label class="form-control-label" for=""><b>Name</b><span class="text-danger">*</span></label><br>
+                    <input class="form-control-input" type="text" name="name" placeholder="Name" id="" required>
+                  </div>
+                  <div class="form-group">
+                   <label class="form-control-label" for=""><b>Email Address</b><span class="text-danger">*</span></label><br>
+                    <input class="form-control-input" type="text" name="" placeholder="Email@example.com" id="" required>
+                  </div>
+                  <div class="form-group">
+                   <label class="form-control-label" for=""><b>phone</b><span class="text-danger">*</span></label><br>
+                    <input class="form-control-input"type="text" name="mob" id=""pattern="[0-9]{10}" required>
+                  </div>
+                  <label><b>Date</b><span class="text-danger">*</span></label><br>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="date" name="" id=""><br>
+                    <label class="form-check-label" for=""></label>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for=""><b>No of attendece</b><span class="text-danger">*</span></label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"name="ab" id="">
+                          <label class="form-check-label" for="">Two Members</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"name="ab" id="">
+                          <label class="form-check-label" for=""> Four Members</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"name="ab" id="">
+                          <label class="form-check-label" for=""> More Than Five Members</label>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div>
+                    <input class="btn btn-info"type="submit" value="submit">
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                 </div>
+                
+                </form>
+ 
+              </div>
+            </div>
+           </div>
+
+       <!------modal end-->
+
+       <div class="container text-center">
+        <h1 class="text-dark"><b>Our Services</b></h1>
+        <div class="row">
+          <div class="col">
+             <img src="f1.jpg" alt="" width="180px" height="180px" class="rounded-circle">
+             <h4><b>Buffet</b></h4>
+             <span>Enjoy the food with your hearts.</span>
+             <p>we providing you hygine.</p>
+          
+          </div>
+          <div class="col">
+            <img src="t1.webp" alt="" width="180px" height="180px" class="rounded-circle">
+            <h4>Take Away</h4>
+            <span>we providing you hygine.</span>
+         </div>
+         <div class="col">
+          <img src="t2.png" alt="" width="180px" height="180px" class="rounded-circle">
+          <h4>Oline Delivery.</h4>
+          <span>we providing you hygine.</span>
+       </div>
+         </div>
+      </div>
+      <!-----sevices end-->
+
+      <div class="text-right bg-dark">
+        <h3 class="text-left text-white"><b>FollowUs</b></h3>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div> 
+
+      
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
